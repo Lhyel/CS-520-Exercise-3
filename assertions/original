@@ -1,0 +1,19 @@
+```python
+# Specifications for change_base(x: int, base: int)
+
+# The return value 'res' must be a string.
+assert isinstance(res, str)
+
+# Each character in 'res' must be a digit from 0 to base - 1.
+assert all(c.isdigit() and 0 <= int(c) < base for c in res)
+
+# The numerical value of 'res' in base 'base' must equal 'x'.
+assert int(res, base) == x
+```
+
+```python
+# assert n >= 0 # 'n' should be a non-negative integer
+# assert type(n) == int # 'n' should be of the integer data type
+# assert res >= 0 # The result should be a non-negative integer
+# assert type(res) == int # The result should be an integer
+``` 
